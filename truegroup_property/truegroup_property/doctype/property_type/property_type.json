@@ -1,0 +1,76 @@
+{
+ "doctype": "DocType",
+ "name": "Property Type",
+ "module": "Truegroup Property",
+ "custom": 0,
+ "is_submittable": 0,
+ "istable": 0,
+ "autoname": "field:property_type",
+ "field_order": [
+  "property_type",
+  "amended_from",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_property_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Data",
+   "label": "Property Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Property Type"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "label": "Lft"
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "label": "Rgt"
+  },
+  {
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Property Type"
+  },
+  {
+   "fieldname": "parent_property_type",
+   "fieldtype": "Link",
+   "label": "Parent Property Type",
+   "options": "Property Type"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  }
+ ],
+ "is_tree": 1
+}

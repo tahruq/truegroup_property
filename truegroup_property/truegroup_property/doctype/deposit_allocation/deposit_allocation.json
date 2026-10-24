@@ -1,0 +1,62 @@
+{
+ "doctype": "DocType",
+ "name": "Deposit Allocation",
+ "module": "Truegroup Property",
+ "custom": 0,
+ "is_submittable": 0,
+ "istable": 1,
+ "field_order": [
+  "deposit_type",
+  "calculation_method",
+  "fixed_amount",
+  "multiple_of_rent",
+  "refundable",
+  "refund_period",
+  "edited"
+ ],
+ "fields": [
+  {
+   "fieldname": "deposit_type",
+   "fieldtype": "Link",
+   "label": "Deposit Type",
+   "options": "Deposit Type Master"
+  },
+  {
+   "fieldname": "calculation_method",
+   "fieldtype": "Data",
+   "label": "Calculation Method",
+   "fetch_from": "deposit_type.default_calculation_method"
+  },
+  {
+   "fieldname": "fixed_amount",
+   "fieldtype": "Currency",
+   "label": "Fixed Amount",
+   "depends_on": "eval:doc.calculation_method == \"Fixed\";"
+  },
+  {
+   "fieldname": "multiple_of_rent",
+   "fieldtype": "Float",
+   "label": "Multiple Of Rent",
+   "depends_on": "eval:doc.calculation_method == \"Multiple of Rent\";"
+  },
+  {
+   "fieldname": "refundable",
+   "fieldtype": "Check",
+   "label": "Refundable",
+   "fetch_from": "deposit_type.default_refundable"
+  },
+  {
+   "fieldname": "refund_period",
+   "fieldtype": "Int",
+   "label": "Refund Period",
+   "fetch_from": "deposit_type.default_refundable_period_in_days",
+   "depends_on": "eval:doc.refundable;"
+  },
+  {
+   "fieldname": "edited",
+   "fieldtype": "Check",
+   "label": "Edited"
+  }
+ ],
+ "permissions": []
+}

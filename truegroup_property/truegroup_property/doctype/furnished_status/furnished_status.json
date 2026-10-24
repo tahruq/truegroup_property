@@ -1,0 +1,36 @@
+{
+ "doctype": "DocType",
+ "name": "Furnished Status",
+ "module": "Truegroup Property",
+ "custom": 0,
+ "is_submittable": 0,
+ "istable": 0,
+ "autoname": "field:furnished_status",
+ "field_order": [
+  "furnished_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "furnished_status",
+   "fieldtype": "Data",
+   "label": "Furnished Status",
+   "reqd": 1,
+   "unique": 1
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  }
+ ]
+}

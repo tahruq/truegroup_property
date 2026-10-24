@@ -1,0 +1,17 @@
+[project]
+name = "truegroup_property"
+authors = [{name = "Truegroup"}]
+description = "Property and utility management for ERPNext v16"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "license.txt"}
+dynamic = ["version"]
+dependencies = []
+
+[build-system]
+requires = ["flit_core>=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.bench.frappe-dependencies]
+frappe = ">=16.0.0,<17.0.0"
+erpnext = ">=16.0.0,<17.0.0"

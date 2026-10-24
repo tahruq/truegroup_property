@@ -1,0 +1,1 @@
+__pycache__/\n*.py[cod]\n.venv/\n*.egg-info/\ndist/\n.env\nsite_config.json\n

@@ -1,0 +1,911 @@
+{
+  "repository": "navariltd/utility-billing",
+  "commit": "e2be8c17899cd9830622e3da231bcbb1b807f8f8",
+  "files": [
+    {
+      "upstream_path": "license.txt",
+      "path": "license.txt",
+      "sha": "0ad25db4bd1d86c452db3f9602ccdbe172438f52"
+    },
+    {
+      "upstream_path": "pyproject.toml",
+      "path": "pyproject.toml",
+      "sha": "3822fc8993051749c8eb18cf47df7f1961b4515c"
+    },
+    {
+      "upstream_path": "utility_billing/__init__.py",
+      "path": "truegroup_property/__init__.py",
+      "sha": "f102a9cadfa89ce554b3b26d2b90bfba2e05273c"
+    },
+    {
+      "upstream_path": "utility_billing/api/login.py",
+      "path": "truegroup_property/api/login.py",
+      "sha": "6de723d5fc2cc8de8d21c3a2f34ad01a7382429d"
+    },
+    {
+      "upstream_path": "utility_billing/api/user.py",
+      "path": "truegroup_property/api/user.py",
+      "sha": "133794911711c3fd037c0b408be03388a08902e5"
+    },
+    {
+      "upstream_path": "utility_billing/config/__init__.py",
+      "path": "truegroup_property/config/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/desktop_icon/rental_portal.json",
+      "path": "truegroup_property/desktop_icon/rental_portal.json",
+      "sha": "b92c982654fd417451a59d6e70f2e1524920b0d0"
+    },
+    {
+      "upstream_path": "utility_billing/desktop_icon/utility.json",
+      "path": "truegroup_property/desktop_icon/utility.json",
+      "sha": "8d01521bc0611baf6fbc912e5d1ad4948228eecf"
+    },
+    {
+      "upstream_path": "utility_billing/desktop_icon/utility_&_rental.json",
+      "path": "truegroup_property/desktop_icon/utility_&_rental.json",
+      "sha": "ccf6a36d520d4a43625258bc4496c863e515b1d8"
+    },
+    {
+      "upstream_path": "utility_billing/fixtures/item_group.json",
+      "path": "truegroup_property/fixtures/item_group.json",
+      "sha": "4877a626b47fe5880abd3f09fd329faf7af165bc"
+    },
+    {
+      "upstream_path": "utility_billing/hooks.py",
+      "path": "truegroup_property/hooks.py",
+      "sha": "30a4dfb5d804c3356e545de6550eb36726a140ba"
+    },
+    {
+      "upstream_path": "utility_billing/modules.txt",
+      "path": "truegroup_property/modules.txt",
+      "sha": "9739e2115ce8bf7917a73223457ff52c27c60e17"
+    },
+    {
+      "upstream_path": "utility_billing/patches.txt",
+      "path": "truegroup_property/patches.txt",
+      "sha": "443e7550cbcfef546a981a941db96171377e9929"
+    },
+    {
+      "upstream_path": "utility_billing/permissions.py",
+      "path": "truegroup_property/permissions.py",
+      "sha": "ff4536d42c353c5c4e121852309a5017eb06a69a"
+    },
+    {
+      "upstream_path": "utility_billing/public/.gitkeep",
+      "path": "truegroup_property/public/.gitkeep",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/public/js/demo.js",
+      "path": "truegroup_property/public/js/demo.js",
+      "sha": "41675c174ad5f2b2e90e7afeeda6bd8864bc0ca8"
+    },
+    {
+      "upstream_path": "utility_billing/setup/demo.py",
+      "path": "truegroup_property/setup/demo.py",
+      "sha": "588c6d152d97bb793d3ba0017dc2f29022332117"
+    },
+    {
+      "upstream_path": "utility_billing/setup/install.py",
+      "path": "truegroup_property/setup/install.py",
+      "sha": "9e576ec55b94e39a2eec631d5a69677b3f897050"
+    },
+    {
+      "upstream_path": "utility_billing/templates/__init__.py",
+      "path": "truegroup_property/templates/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/templates/pages/__init__.py",
+      "path": "truegroup_property/templates/pages/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/__init__.py",
+      "path": "truegroup_property/truegroup_property/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/apis/delete_doc.py",
+      "path": "truegroup_property/truegroup_property/apis/delete_doc.py",
+      "sha": "cb2949d18b2d53c38fd68f33e23d30ca67cf751b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/auto_repeat.json",
+      "path": "truegroup_property/truegroup_property/custom/auto_repeat.json",
+      "sha": "7b551d54fa23b704c17953942828a45ddfb9a4ca"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/bom.json",
+      "path": "truegroup_property/truegroup_property/custom/bom.json",
+      "sha": "264a7bb4e91ae58de15f61a587f1a139835c638d"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/contract.json",
+      "path": "truegroup_property/truegroup_property/custom/contract.json",
+      "sha": "bd0dfa4a7115658b5f7ac966903c85a8b288f5b0"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/customer.json",
+      "path": "truegroup_property/truegroup_property/custom/customer.json",
+      "sha": "eedf7db82faa0d8cf1b2829e72c3b6d8d29948f1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/issue.json",
+      "path": "truegroup_property/truegroup_property/custom/issue.json",
+      "sha": "3e0923a874e7c7786c3d51fa22fef51b8a6a9b2b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/item.json",
+      "path": "truegroup_property/truegroup_property/custom/item.json",
+      "sha": "09530a9cd2cb4f70a04473f891dd0860d31543bd"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/item_group.json",
+      "path": "truegroup_property/truegroup_property/custom/item_group.json",
+      "sha": "33af83a2c8dc44f55f3c39aead7f67569f7ab271"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/item_price.json",
+      "path": "truegroup_property/truegroup_property/custom/item_price.json",
+      "sha": "39ae062bafd7311f3e507028911dae40563959f3"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/sales_invoice.json",
+      "path": "truegroup_property/truegroup_property/custom/sales_invoice.json",
+      "sha": "be7cabc2a04b0b7287e9194656835795ebc3883e"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/sales_invoice_item.json",
+      "path": "truegroup_property/truegroup_property/custom/sales_invoice_item.json",
+      "sha": "f215954e22ec21debf65bdf095c0e1016ce4a722"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/sales_order.json",
+      "path": "truegroup_property/truegroup_property/custom/sales_order.json",
+      "sha": "ac191437ebc3b7ad65dcf65f41160bd966b8f319"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/sales_order_item.json",
+      "path": "truegroup_property/truegroup_property/custom/sales_order_item.json",
+      "sha": "05fb61b906f80bd0912b949df2e9321dd0b048b5"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/custom/warranty_claim.json",
+      "path": "truegroup_property/truegroup_property/custom/warranty_claim.json",
+      "sha": "5dc52a9c90365a636da0a319346c6fd78700a4f0"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/billing_adjustment_rule/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/billing_adjustment_rule/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/billing_adjustment_rule/billing_adjustment_rule.js",
+      "path": "truegroup_property/truegroup_property/doctype/billing_adjustment_rule/billing_adjustment_rule.js",
+      "sha": "95ccd97a74c1de438dd83a28b627921ca1bad8a8"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/billing_adjustment_rule/billing_adjustment_rule.json",
+      "path": "truegroup_property/truegroup_property/doctype/billing_adjustment_rule/billing_adjustment_rule.json",
+      "sha": "6226268f92fd7482bf0a0d9c5777fee3ab381d49"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/billing_adjustment_rule/billing_adjustment_rule.py",
+      "path": "truegroup_property/truegroup_property/doctype/billing_adjustment_rule/billing_adjustment_rule.py",
+      "sha": "d83bdd90d99f7f83cb9e5921545d2e4eeeffcfb1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/billing_adjustment_rule/test_billing_adjustment_rule.py",
+      "path": "truegroup_property/truegroup_property/doctype/billing_adjustment_rule/test_billing_adjustment_rule.py",
+      "sha": "ddae109f2516d9490e5ff3dedbc1cda98c235f0a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/contract_utility_property_item/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/contract_utility_property_item/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/contract_utility_property_item/contract_utility_property_item.json",
+      "path": "truegroup_property/truegroup_property/doctype/contract_utility_property_item/contract_utility_property_item.json",
+      "sha": "299cc46b933c9eebf16cb2c0664950352d026aed"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/contract_utility_property_item/contract_utility_property_item.py",
+      "path": "truegroup_property/truegroup_property/doctype/contract_utility_property_item/contract_utility_property_item.py",
+      "sha": "7c4b7695940f036501af1270373b1c13aef00f3a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/insurance/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance/insurance.js",
+      "path": "truegroup_property/truegroup_property/doctype/insurance/insurance.js",
+      "sha": "ca3df7b485f3c5f0c9a0ba422a90237960db275d"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance/insurance.json",
+      "path": "truegroup_property/truegroup_property/doctype/insurance/insurance.json",
+      "sha": "2106297a5b70d3829cc46fbc9df1a7a5a03b7ace"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance/insurance.py",
+      "path": "truegroup_property/truegroup_property/doctype/insurance/insurance.py",
+      "sha": "7b8f65179de704e67797ac0b0a2939206c521766"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance/test_insurance.py",
+      "path": "truegroup_property/truegroup_property/doctype/insurance/test_insurance.py",
+      "sha": "e46bfd5e1c5ff8335a9321d3195512555410d9f2"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance_type/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/insurance_type/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance_type/insurance_type.js",
+      "path": "truegroup_property/truegroup_property/doctype/insurance_type/insurance_type.js",
+      "sha": "b0a130d7167ab56642d9983932055b6e6ca5af04"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance_type/insurance_type.json",
+      "path": "truegroup_property/truegroup_property/doctype/insurance_type/insurance_type.json",
+      "sha": "ab0c3503a1638a578a3ab21b3074a58773440074"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance_type/insurance_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/insurance_type/insurance_type.py",
+      "sha": "310193fb9412afdb60be43f0dcc6939287355feb"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/insurance_type/test_insurance_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/insurance_type/test_insurance_type.py",
+      "sha": "830b31b67594c9f6ae6c87f13bd3feb45a9c0ce0"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/item_price_tariff/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/item_price_tariff/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/item_price_tariff/item_price_tariff.json",
+      "path": "truegroup_property/truegroup_property/doctype/item_price_tariff/item_price_tariff.json",
+      "sha": "57facbd17bb313c47d2a61058593432738f09ced"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/item_price_tariff/item_price_tariff.py",
+      "path": "truegroup_property/truegroup_property/doctype/item_price_tariff/item_price_tariff.py",
+      "sha": "829f6b09d21c8a841a5fb232b97f06ddf0c8225a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading/meter_reading.js",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading/meter_reading.js",
+      "sha": "f532012b57ac8df670d281b6dede9684146b1631"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading/meter_reading.json",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading/meter_reading.json",
+      "sha": "7c972a74699cf83f5faab7420345e7b40046c46f"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading/meter_reading.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading/meter_reading.py",
+      "sha": "b5eebc59be4589b3914299959c57a4cdc95036a6"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading/meter_reading_dashboard.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading/meter_reading_dashboard.py",
+      "sha": "83aa9bb11ed4783f7db6b490efd2c42d3b9f7638"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading/test_meter_reading.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading/test_meter_reading.py",
+      "sha": "084b4d015fcc29067cdef3912daa5e0b61222e62"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_item/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_item/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_item/meter_reading_item.js",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_item/meter_reading_item.js",
+      "sha": "ec1b611e2cf12382317f19665e27fef6cc62cfbf"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_item/meter_reading_item.json",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_item/meter_reading_item.json",
+      "sha": "904b9655afa09216a58fba911a32488aee97c99e"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_item/meter_reading_item.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_item/meter_reading_item.py",
+      "sha": "cf004b33958ea5f19682550f28b1ba57542507d0"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_item/test_meter_reading_item.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_item/test_meter_reading_item.py",
+      "sha": "17537ac54ad58c545000b6b216a0c96b87efe29a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_tariff_rate/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_tariff_rate/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_tariff_rate/meter_reading_tariff_rate.json",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_tariff_rate/meter_reading_tariff_rate.json",
+      "sha": "e63c4fdfaa8ef4341894a697fd37d8dd54d6f53b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/meter_reading_tariff_rate/meter_reading_tariff_rate.py",
+      "path": "truegroup_property/truegroup_property/doctype/meter_reading_tariff_rate/meter_reading_tariff_rate.py",
+      "sha": "6ab42d8e0c276a59b1724dcab366e96559b25385"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/sales_invoice_meter_reading/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/sales_invoice_meter_reading/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/sales_invoice_meter_reading/sales_invoice_meter_reading.json",
+      "path": "truegroup_property/truegroup_property/doctype/sales_invoice_meter_reading/sales_invoice_meter_reading.json",
+      "sha": "3e78360c83e010dcfd4060d5870716826d1ca12d"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/sales_invoice_meter_reading/sales_invoice_meter_reading.py",
+      "path": "truegroup_property/truegroup_property/doctype/sales_invoice_meter_reading/sales_invoice_meter_reading.py",
+      "sha": "c42ecb930917c97663632a66e5daed8c34b759cd"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/sales_order_meter_reading/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/sales_order_meter_reading/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/sales_order_meter_reading/sales_order_meter_reading.json",
+      "path": "truegroup_property/truegroup_property/doctype/sales_order_meter_reading/sales_order_meter_reading.json",
+      "sha": "1f9bb82b3b347ceafdaaf4158cf99da95b419c2e"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/sales_order_meter_reading/sales_order_meter_reading.py",
+      "path": "truegroup_property/truegroup_property/doctype/sales_order_meter_reading/sales_order_meter_reading.py",
+      "sha": "41a2406a4022be753f06e79fa8834a70e5d72c8d"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure/test_utility_bill_structure.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure/test_utility_bill_structure.py",
+      "sha": "77bc92120aeec2c9b68d015ba7d58c850f332063"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure/utility_bill_structure.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure/utility_bill_structure.js",
+      "sha": "89bc3b475055fd8b2e5d0342eada92a9b67f07bd"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure/utility_bill_structure.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure/utility_bill_structure.json",
+      "sha": "7fccc8c69fa553f1640c1b33be13a492796c7f66"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure/utility_bill_structure.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure/utility_bill_structure.py",
+      "sha": "f501c0b921e8d0aaef89d3c00149bf0d8f7cd72e"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure_item/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure_item/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure_item/utility_bill_structure_item.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure_item/utility_bill_structure_item.json",
+      "sha": "727d3a74e5039f47e8bec5e27d30e46cfac2168b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_bill_structure_item/utility_bill_structure_item.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_bill_structure_item/utility_bill_structure_item.py",
+      "sha": "2ed0526647244f31a521460a9a393698a09415bd"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_billing_settings/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_billing_settings/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_billing_settings/test_utility_billing_settings.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_billing_settings/test_utility_billing_settings.py",
+      "sha": "0e2f21ee6f9887e7614ac5f83be70f0c1e99ef28"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_billing_settings/utility_billing_settings.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_billing_settings/utility_billing_settings.js",
+      "sha": "c7248bf84700846263b8f0bfc2504bfb64271354"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_billing_settings/utility_billing_settings.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_billing_settings/utility_billing_settings.json",
+      "sha": "ea8c0340a182dd7ffdc1b65be178b8cef99dc7c7"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_billing_settings/utility_billing_settings.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_billing_settings/utility_billing_settings.py",
+      "sha": "78fc47e7f7cbd429da14712f705da47254dc9641"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_category/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_category/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_category/test_utility_category.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_category/test_utility_category.py",
+      "sha": "783c867dc5a7070e28603b4f7bba00eb45792786"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_category/utility_category.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_category/utility_category.js",
+      "sha": "87a9270a4ef056d043c10aa42ca631946ccdbe5a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_category/utility_category.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_category/utility_category.json",
+      "sha": "a06eb07db78241573d1fc607b5bcd223a282b7e8"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_category/utility_category.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_category/utility_category.py",
+      "sha": "e2d1288627b0f624c22cff50354fb2ed23aceecd"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property/test_utility_property.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property/test_utility_property.py",
+      "sha": "f5c1af8e62e58ba705d74a5db7710509756948e3"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property/utility_property.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property/utility_property.js",
+      "sha": "a2dcd8445f0fa134c4d3a843fe578eb2bd9f65cb"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property/utility_property.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property/utility_property.json",
+      "sha": "9ba8481f0c1fd5060b216fee66f807ff1e47e416"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property/utility_property.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property/utility_property.py",
+      "sha": "d87ba5880a997cbff8d298706505fdfe111b6f06"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property/utility_property_dashboard.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property/utility_property_dashboard.py",
+      "sha": "8cbc4190e669a9bf046fe8a22630392c2d86f138"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature/test_utility_property_feature.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature/test_utility_property_feature.py",
+      "sha": "9f73ccc9c6fcbac8968da1ede0d441f86d2ea961"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature/utility_property_feature.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature/utility_property_feature.js",
+      "sha": "2e6e506aa9c4109219a213c766baa73c79714b3b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature/utility_property_feature.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature/utility_property_feature.json",
+      "sha": "f35eb92ca97133c899058c053f93b4eda55efad3"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature/utility_property_feature.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature/utility_property_feature.py",
+      "sha": "37b07947d7493ca46982f68166a36043964ddf19"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_item/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_item/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_item/utility_property_feature_item.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_item/utility_property_feature_item.json",
+      "sha": "40f825023d6da25caef29411cc68782e286c6df1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_item/utility_property_feature_item.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_item/utility_property_feature_item.py",
+      "sha": "e29bd5b53888198a658db6181a79151bad4010de"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_type/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_type/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_type/test_utility_property_feature_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_type/test_utility_property_feature_type.py",
+      "sha": "5ee63f611bf4a1e476154860a6f795a1de9a41a3"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_type/utility_property_feature_type.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_type/utility_property_feature_type.js",
+      "sha": "42c4390819f514233b5f15021777f1e397f392ed"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_type/utility_property_feature_type.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_type/utility_property_feature_type.json",
+      "sha": "0cc6cff1240d1b2f2a1814760d1062e7c2f01ba1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_feature_type/utility_property_feature_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_feature_type/utility_property_feature_type.py",
+      "sha": "d30a5da691e910f4bc39f6d7ec51e76142dd8bce"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_unit_type/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_unit_type/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_unit_type/test_utility_property_unit_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_unit_type/test_utility_property_unit_type.py",
+      "sha": "241ce15fe3c15efe9d34881354e57626f749d5eb"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_unit_type/utility_property_unit_type.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_unit_type/utility_property_unit_type.js",
+      "sha": "137835f64f8c111a1c8e67cb3356684474441be6"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_unit_type/utility_property_unit_type.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_unit_type/utility_property_unit_type.json",
+      "sha": "6aef51cc333cb567c8dc31adabdd69bd49af9c22"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_property_unit_type/utility_property_unit_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_property_unit_type/utility_property_unit_type.py",
+      "sha": "5a080f4622f05c3de76b262abb3314d880ade683"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_request_type/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_request_type/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_request_type/test_utility_request_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_request_type/test_utility_request_type.py",
+      "sha": "0910a2a376e0479ecfa78283b0e0927d1296296c"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_request_type/utility_request_type.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_request_type/utility_request_type.js",
+      "sha": "ee02004eb3698aaaa0d30916de72dc0288406eaf"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_request_type/utility_request_type.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_request_type/utility_request_type.json",
+      "sha": "46641fb257f4686d4b2b596ab4056f83ba468085"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_request_type/utility_request_type.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_request_type/utility_request_type.py",
+      "sha": "f9318b3e7a4075e584efd2ff491a07f79732ef11"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/test_utility_service_request.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/test_utility_service_request.py",
+      "sha": "3b9db1f19750d6dd0aaeb8d4b0fae4fe656ca13e"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/utility_service_request.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/utility_service_request.js",
+      "sha": "862d3431b042481b48889d8fbf7b90600113a95f"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/utility_service_request.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/utility_service_request.json",
+      "sha": "98d38a061f29e754392cfb60a833f253ce2d3742"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/utility_service_request.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/utility_service_request.py",
+      "sha": "53d8f19fe9854ac5fa0ea2a9fcb2eb12f97f37ed"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/utility_service_request_dashboard.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/utility_service_request_dashboard.py",
+      "sha": "0d66cc4a526d068ae95ffe739f30a5e45585b590"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request/utility_service_request_list.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request/utility_service_request_list.js",
+      "sha": "57a39d1a3b6762e5cfae3ce61a6502805badbba1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request_item/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request_item/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request_item/utility_service_request_item.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request_item/utility_service_request_item.json",
+      "sha": "1c451ab98011289e57fde80bea2c02a1182a6827"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_service_request_item/utility_service_request_item.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_service_request_item/utility_service_request_item.py",
+      "sha": "abb0829f3060d7ec2d78162e25acab28ea706d5b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_tariff_block/__init__.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_tariff_block/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_tariff_block/test_utility_tariff_block.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_tariff_block/test_utility_tariff_block.py",
+      "sha": "fda67c5db5f147cdeeead62418627163a9677092"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_tariff_block/utility_tariff_block.js",
+      "path": "truegroup_property/truegroup_property/doctype/utility_tariff_block/utility_tariff_block.js",
+      "sha": "94ddfc6816aeb803225c84a61d13f3ebacbc680b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_tariff_block/utility_tariff_block.json",
+      "path": "truegroup_property/truegroup_property/doctype/utility_tariff_block/utility_tariff_block.json",
+      "sha": "d71e4ede33156db418e0d2cf874a95b21868c9e4"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/doctype/utility_tariff_block/utility_tariff_block.py",
+      "path": "truegroup_property/truegroup_property/doctype/utility_tariff_block/utility_tariff_block.py",
+      "sha": "5e91cb66440a10f7c064f50c964190cea58dd80d"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/client/auto_repeat.js",
+      "path": "truegroup_property/truegroup_property/overrides/client/auto_repeat.js",
+      "sha": "f4c6ca12b22c8f5c2e6d62082d87f351ca5991a6"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/client/auto_repeat_list.js",
+      "path": "truegroup_property/truegroup_property/overrides/client/auto_repeat_list.js",
+      "sha": "e34847cd04175f8736ff7ce236f277a8d98f5643"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/client/contract.js",
+      "path": "truegroup_property/truegroup_property/overrides/client/contract.js",
+      "sha": "40cfbac11684e7566198380f7cb1af01cd824a62"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/client/customer.js",
+      "path": "truegroup_property/truegroup_property/overrides/client/customer.js",
+      "sha": "953d6819d9945ab8f2e7786f6f296ea4e61d5d38"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/client/item_price.js",
+      "path": "truegroup_property/truegroup_property/overrides/client/item_price.js",
+      "sha": "65ea7e53f1b296701ad35d6d6a9c74910ece6bb0"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/client/sales_order_list.js",
+      "path": "truegroup_property/truegroup_property/overrides/client/sales_order_list.js",
+      "sha": "7fef027738e2ca7bacaf3a0af0d4fe0990846145"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/server/auto_repeat.py",
+      "path": "truegroup_property/truegroup_property/overrides/server/auto_repeat.py",
+      "sha": "703ea160c714a1021eda46cf08d662475a314dea"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/server/contract.py",
+      "path": "truegroup_property/truegroup_property/overrides/server/contract.py",
+      "sha": "2166e2969ef6c79ad29bb4711b2748e5de62b40d"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/server/item.py",
+      "path": "truegroup_property/truegroup_property/overrides/server/item.py",
+      "sha": "fb5ba2f50f5f5e52ad363dfe494f5f0bf83fc0b0"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/server/sales_invoice.py",
+      "path": "truegroup_property/truegroup_property/overrides/server/sales_invoice.py",
+      "sha": "b8836c6b5b7195f00e53590b7d2a96a36d038965"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/overrides/server/sales_order.py",
+      "path": "truegroup_property/truegroup_property/overrides/server/sales_order.py",
+      "sha": "0d0a00004743efb482419fe20a78bbe2db1ee52a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/patches/accounting_dimension.py",
+      "path": "truegroup_property/truegroup_property/patches/accounting_dimension.py",
+      "sha": "81fcbfb313dfd75b85954b665e69d4f1893d06d2"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/patches/contract_end_notification.py",
+      "path": "truegroup_property/truegroup_property/patches/contract_end_notification.py",
+      "sha": "d3d82dac71401f16c31ee958ab2493a8d4486630"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/patches/initiate_frappe_crm.py",
+      "path": "truegroup_property/truegroup_property/patches/initiate_frappe_crm.py",
+      "sha": "dcd67be867b0210ea4fa927c5f68cc2a3156ff68"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/patches/set_allow_auto_repeat_sales_invoice.py",
+      "path": "truegroup_property/truegroup_property/patches/set_allow_auto_repeat_sales_invoice.py",
+      "sha": "1f30cadc0c35b562fb3fe69450a5275faa613078"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/__init__.py",
+      "path": "truegroup_property/truegroup_property/report/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/meter_reading_summary/__init__.py",
+      "path": "truegroup_property/truegroup_property/report/meter_reading_summary/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/meter_reading_summary/meter_reading_summary.js",
+      "path": "truegroup_property/truegroup_property/report/meter_reading_summary/meter_reading_summary.js",
+      "sha": "f131dea0dde4f981cb57d781e28f20c785c1028a"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/meter_reading_summary/meter_reading_summary.json",
+      "path": "truegroup_property/truegroup_property/report/meter_reading_summary/meter_reading_summary.json",
+      "sha": "ef7f6d9def7fd291f0ef967f874ffa5766356fdc"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/meter_reading_summary/meter_reading_summary.py",
+      "path": "truegroup_property/truegroup_property/report/meter_reading_summary/meter_reading_summary.py",
+      "sha": "2a17463064a18d8ceb1af6a2ae4e262aee5e850f"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_availability/__init__.py",
+      "path": "truegroup_property/truegroup_property/report/property_availability/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_availability/property_availability.js",
+      "path": "truegroup_property/truegroup_property/report/property_availability/property_availability.js",
+      "sha": "2510af80f5fa282f1200844f1eff3b29a37a4468"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_availability/property_availability.json",
+      "path": "truegroup_property/truegroup_property/report/property_availability/property_availability.json",
+      "sha": "401d0a7ef4bcdadda94a0c8ddf31a8f2d4e080f1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_availability/property_availability.py",
+      "path": "truegroup_property/truegroup_property/report/property_availability/property_availability.py",
+      "sha": "efc2e12a41c670d09cb7786532d019d5e28a646e"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_billing_overview/__init__.py",
+      "path": "truegroup_property/truegroup_property/report/property_billing_overview/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_billing_overview/property_billing_overview.js",
+      "path": "truegroup_property/truegroup_property/report/property_billing_overview/property_billing_overview.js",
+      "sha": "3c8ede2a0fe27837ab11974332f9aa78994d8630"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_billing_overview/property_billing_overview.json",
+      "path": "truegroup_property/truegroup_property/report/property_billing_overview/property_billing_overview.json",
+      "sha": "3aa658b325f2ff1dba33769c0b077f4f7f4f3600"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/property_billing_overview/property_billing_overview.py",
+      "path": "truegroup_property/truegroup_property/report/property_billing_overview/property_billing_overview.py",
+      "sha": "e8129326bffb1fcf0d03891059a51963c8359ce1"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/service_request_summary/__init__.py",
+      "path": "truegroup_property/truegroup_property/report/service_request_summary/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/service_request_summary/service_request_summary.js",
+      "path": "truegroup_property/truegroup_property/report/service_request_summary/service_request_summary.js",
+      "sha": "deadd490809a73819906d709268dd0faf25a0c95"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/service_request_summary/service_request_summary.json",
+      "path": "truegroup_property/truegroup_property/report/service_request_summary/service_request_summary.json",
+      "sha": "07e0b8788e489b989b0aa47099b077105fa7963f"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/service_request_summary/service_request_summary.py",
+      "path": "truegroup_property/truegroup_property/report/service_request_summary/service_request_summary.py",
+      "sha": "3971b92d7cc7cb93ac77e11eaab3d993bef36cbc"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/tenancy_summary/__init__.py",
+      "path": "truegroup_property/truegroup_property/report/tenancy_summary/__init__.py",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/tenancy_summary/tenancy_summary.js",
+      "path": "truegroup_property/truegroup_property/report/tenancy_summary/tenancy_summary.js",
+      "sha": "f455b782337d58272e83a68e8903c8ac0dde17b8"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/tenancy_summary/tenancy_summary.json",
+      "path": "truegroup_property/truegroup_property/report/tenancy_summary/tenancy_summary.json",
+      "sha": "b6b6d4234112ca6e783d613a6c5c31edae5eed1b"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/report/tenancy_summary/tenancy_summary.py",
+      "path": "truegroup_property/truegroup_property/report/tenancy_summary/tenancy_summary.py",
+      "sha": "56485c1c5b236d139d6d86d19c9389f826427c2c"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/utils/auto_repeat.py",
+      "path": "truegroup_property/truegroup_property/utils/auto_repeat.py",
+      "sha": "639065d91c522599c1c2f8310761c9d350b9f3ca"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/utils/create_meter_reading_rates.py",
+      "path": "truegroup_property/truegroup_property/utils/create_meter_reading_rates.py",
+      "sha": "84c8d5ca8cfb4a311d071ef63f6f130ad56cb988"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/utils/update_service_request.py",
+      "path": "truegroup_property/truegroup_property/utils/update_service_request.py",
+      "sha": "99db1f6309a06d82d6b91151c093d18a1318ebdb"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/utils/utils.py",
+      "path": "truegroup_property/truegroup_property/utils/utils.py",
+      "sha": "b2134fc9693a362ee8e62316a942129ee098e1cd"
+    },
+    {
+      "upstream_path": "utility_billing/utility_billing/workspace/utility_&_rental/utility_&_rental.json",
+      "path": "truegroup_property/truegroup_property/workspace/utility_&_rental/utility_&_rental.json",
+      "sha": "13d6dd8d433b90e8e16f156da237dc8de7710c2e"
+    },
+    {
+      "upstream_path": "utility_billing/workspace_sidebar/utility_&_rental.json",
+      "path": "truegroup_property/workspace_sidebar/utility_&_rental.json",
+      "sha": "afbed40a863435396a4a86336a9262706f47d0b3"
+    }
+  ]
+}

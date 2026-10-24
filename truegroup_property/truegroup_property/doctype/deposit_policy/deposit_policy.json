@@ -1,0 +1,64 @@
+{
+ "doctype": "DocType",
+ "name": "Deposit Policy",
+ "module": "Truegroup Property",
+ "custom": 0,
+ "is_submittable": 1,
+ "istable": 0,
+ "autoname": "field:deposit_policy_name",
+ "field_order": [
+  "deposit_policy_name",
+  "company",
+  "is_active",
+  "deposit_policy_details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "deposit_policy_name",
+   "fieldtype": "Data",
+   "label": "Deposit Policy Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": "0"
+  },
+  {
+   "fieldname": "deposit_policy_details",
+   "fieldtype": "Table",
+   "label": "Deposit Policy Details",
+   "options": "Deposit Policy Detail"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Deposit Policy"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  }
+ ]
+}

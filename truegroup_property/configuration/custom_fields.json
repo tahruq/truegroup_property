@@ -1,0 +1,378 @@
+{
+  "Utility Property": [
+    {
+      "fieldname": "custom_anchor_date",
+      "label": "Anchor Date",
+      "fieldtype": "Date",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property",
+      "depends_on": "eval: !doc.is_group"
+    },
+    {
+      "fieldname": "custom_base_rent",
+      "label": "Base Rent",
+      "fieldtype": "Currency",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property",
+      "depends_on": "eval: !doc.is_group"
+    },
+    {
+      "fieldname": "custom_bill_generation_day",
+      "label": "Bill Generation Day",
+      "fieldtype": "Int",
+      "fetch_from": "custom_billing_adjustment_rule.repeat_on_day",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_bill_items",
+      "label": "Bill Items",
+      "fieldtype": "Table",
+      "options": "Utility Bill Structure Item",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_billing_adjustment_rule",
+      "label": "Billing Adjustment Rule",
+      "fieldtype": "Link",
+      "options": "Billing Adjustment Rule",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_billing_details",
+      "label": "Billing Details",
+      "fieldtype": "Section Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_billing_due_dates",
+      "label": "Billing Due Dates",
+      "fieldtype": "Tab Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property",
+      "depends_on": "eval: !!doc.parent_utility_property"
+    },
+    {
+      "fieldname": "custom_column_break_camm4",
+      "label": "Column Break Camm4",
+      "fieldtype": "Column Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_column_break_kzqmp",
+      "label": "Column Break Kzqmp",
+      "fieldtype": "Column Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_cost_center",
+      "label": "Cost Center",
+      "fieldtype": "Link",
+      "options": "Cost Center",
+      "fetch_from": "parent_utility_property.custom_cost_center",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_deposit",
+      "label": "Deposit",
+      "fieldtype": "Tab Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property",
+      "depends_on": "eval: !!doc.parent_utility_property"
+    },
+    {
+      "fieldname": "custom_deposit_details",
+      "label": "Deposit Details",
+      "fieldtype": "Section Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property",
+      "depends_on": "eval: !!doc.parent_utility_property"
+    },
+    {
+      "fieldname": "custom_deposit_policy",
+      "label": "Deposit Policy",
+      "fieldtype": "Link",
+      "options": "Deposit Policy",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_deposit_policy_details",
+      "label": "Deposit Policy Details",
+      "fieldtype": "Table",
+      "options": "Deposit Allocation",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_effective_after",
+      "label": "Effective After",
+      "fieldtype": "Int",
+      "fetch_from": "custom_billing_adjustment_rule.effective_after_months",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_furnished_status",
+      "label": "Furnished Status",
+      "fieldtype": "Link",
+      "options": "Furnished Status",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_gps_location",
+      "label": "Gps Location",
+      "fieldtype": "Geolocation",
+      "fetch_from": "old_parent.custom_gps_location",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_increment_interval",
+      "label": "Increment Interval",
+      "fieldtype": "Float",
+      "fetch_from": "custom_billing_adjustment_rule.increment_interval_months",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_increment_percentage",
+      "label": "Increment Percentage",
+      "fieldtype": "Percent",
+      "fetch_from": "custom_billing_adjustment_rule.increment_percentage",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_inherited_from_parent",
+      "label": "Inherited From Parent",
+      "fieldtype": "Check",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_overdue_after_due_days",
+      "label": "Overdue After Due Days",
+      "fieldtype": "Int",
+      "fetch_from": "custom_billing_adjustment_rule.grace_period_days",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_property_type",
+      "label": "Property Type",
+      "fieldtype": "Link",
+      "options": "Property Type",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_proration_rule",
+      "label": "Proration Rule",
+      "fieldtype": "Link",
+      "options": "Proration Rule",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_rejection_reason",
+      "label": "Rejection Reason",
+      "fieldtype": "Data",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_rent_details",
+      "label": "Rent Details",
+      "fieldtype": "Section Break",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_rent_periodicity",
+      "label": "Rent Periodicity",
+      "fieldtype": "Select",
+      "options": "Monthly\nQuarterly\nHalf Yearly\nYearly\nAdhoc",
+      "fetch_from": "custom_billing_adjustment_rule.frequency",
+      "allow_on_submit": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_tax_template",
+      "label": "Tax Template",
+      "fieldtype": "Link",
+      "options": "Item Tax Template",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_utility_bill_structure",
+      "label": "Utility Bill Structure",
+      "fieldtype": "Link",
+      "options": "Utility Bill Structure",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "workflow_state",
+      "label": "Workflow State",
+      "fieldtype": "Link",
+      "options": "Workflow State",
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "tg_reservation_doctype",
+      "label": "Reservation Source Type",
+      "fieldtype": "Link",
+      "options": "DocType",
+      "read_only": 1,
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "tg_reservation_name",
+      "label": "Reservation Source",
+      "fieldtype": "Dynamic Link",
+      "options": "tg_reservation_doctype",
+      "read_only": 1,
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "tg_contract",
+      "label": "Current Contract",
+      "fieldtype": "Link",
+      "options": "Contract",
+      "read_only": 1,
+      "allow_on_submit": 1,
+      "module": "Truegroup Property"
+    }
+  ],
+  "Sales Invoice": [
+    {
+      "fieldname": "utility_property",
+      "label": "Utility Property",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_contract",
+      "label": "Contract",
+      "fieldtype": "Link",
+      "options": "Contract",
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_invoice_purpose",
+      "label": "Invoice Purpose",
+      "fieldtype": "Select",
+      "options": "\nFirst Month Rent",
+      "module": "Truegroup Property"
+    }
+  ],
+  "Sales Order": [
+    {
+      "fieldname": "utility_property",
+      "label": "Utility Property",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "module": "Truegroup Property"
+    }
+  ],
+  "Sales Invoice Item": [
+    {
+      "fieldname": "utility_property",
+      "label": "Utility Property",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "module": "Truegroup Property"
+    }
+  ],
+  "Sales Order Item": [
+    {
+      "fieldname": "utility_property",
+      "label": "Utility Property",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "module": "Truegroup Property"
+    }
+  ],
+  "Utility Service Request Item": [
+    {
+      "fieldname": "utility_property",
+      "label": "Utility Property",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "module": "Truegroup Property"
+    }
+  ],
+  "Auto Repeat": [
+    {
+      "fieldname": "tg_contract",
+      "label": "Contract",
+      "fieldtype": "Link",
+      "options": "Contract",
+      "module": "Truegroup Property"
+    }
+  ],
+  "Utility Service Request": [
+    {
+      "fieldname": "tg_crm_deal",
+      "label": "CRM Deal",
+      "fieldtype": "Link",
+      "options": "CRM Deal",
+      "module": "Truegroup Property"
+    }
+  ],
+  "CRM Deal": [
+    {
+      "fieldname": "custom_unit_name",
+      "label": "Unit",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "read_only": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_reserved_utility_property",
+      "label": "Reserved Unit",
+      "fieldtype": "Link",
+      "options": "Utility Property",
+      "read_only": 1,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_introducing_agent",
+      "label": "Introducing Agent",
+      "fieldtype": "Link",
+      "options": "Sales Partner",
+      "read_only": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_crm_lead",
+      "label": "Source Lead",
+      "fieldtype": "Link",
+      "options": "CRM Lead",
+      "read_only": 0,
+      "module": "Truegroup Property"
+    }
+  ],
+  "Customer": [
+    {
+      "fieldname": "crm_deal",
+      "label": "CRM Deal",
+      "fieldtype": "Data",
+      "module": "Truegroup Property"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+ "doctype": "DocType",
+ "name": "Deposit Type Master",
+ "module": "Truegroup Property",
+ "custom": 0,
+ "is_submittable": 1,
+ "istable": 0,
+ "autoname": "field:deposit_type_name",
+ "field_order": [
+  "deposit_type_name",
+  "default_calculation_method",
+  "default_refundable",
+  "default_refundable_period_in_days",
+  "linked_account",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "deposit_type_name",
+   "fieldtype": "Data",
+   "label": "Deposit Type Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "default_calculation_method",
+   "fieldtype": "Select",
+   "label": "Default Calculation Method",
+   "options": "Fixed\nMultiple of Rent"
+  },
+  {
+   "fieldname": "default_refundable",
+   "fieldtype": "Check",
+   "label": "Default Refundable"
+  },
+  {
+   "fieldname": "default_refundable_period_in_days",
+   "fieldtype": "Int",
+   "label": "Default Refundable Period In Days"
+  },
+  {
+   "fieldname": "linked_account",
+   "fieldtype": "Link",
+   "label": "Linked Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Deposit Type Master"
+  }
+ ],
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 1,
+   "cancel": 0,
+   "amend": 0,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  }
+ ]
+}
