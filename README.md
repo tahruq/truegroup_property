@@ -12,6 +12,8 @@ An independent ERPNext v16/Frappe CRM app, derived from Navari Utility Billing a
 - Server-side service-request pricing and property hierarchy checks.
 - Normal Contract submission, without committing a temporary Available status.
 - Additive custom-field setup; existing field settings are not overwritten.
+- Reviewed tenant onboarding: Qualified Lead → Deal → Won Deal Customer review → draft Service Request → Contract review.
+- Server duplicate/source checks, standard permission checks and Desk/Frappe CRM actions. See docs/ONBOARDING.md.
 
 ## Installation status
 Requires Frappe/ERPNext version 16 and Frappe CRM. Test only on a **fresh disposable staging site**. The installer rejects coexistence with utility_billing because both apps own the same business DocTypes. **Do not uninstall Navari from an existing site to get past this check.** Existing-site ownership transfer/data migration is not implemented in this milestone.
@@ -22,6 +24,7 @@ Frappe Cloud should use this repository and the development branch shown in GitH
 ```sh
 python -m unittest discover -s tests -v
 python -m compileall -q truegroup_property
+node tests/client_actions.cjs
 ```
 
 See docs/STATUS.md and docs/MIGRATION.md for remaining work. No user credentials, business records or live-site exports are included.

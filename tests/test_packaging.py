@@ -25,7 +25,7 @@ class PackagingTests(unittest.TestCase):
     def test_every_new_custom_link_target_is_known(self):
         fields = json.loads((ROOT / "truegroup_property/configuration/custom_fields.json").read_text())
         custom_docs = {json.loads(f.read_text())["name"] for f in (ROOT / "truegroup_property/truegroup_property/doctype").glob("*/*.json")}
-        standard = {"DocType","Contract","CRM Deal","CRM Lead","Sales Partner","Cost Center","Account","Item Tax Template","Workflow State"}
+        standard = {"DocType","Contract","CRM Deal","CRM Lead","Sales Partner","Cost Center","Account","Item Tax Template","Workflow State","Issue Type","Contact"}
         for dt, rows in fields.items():
             for row in rows:
                 if row["fieldtype"] in ("Link","Table"):

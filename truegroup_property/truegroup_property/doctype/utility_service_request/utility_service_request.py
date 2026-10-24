@@ -125,37 +125,11 @@ def create_customer_and_sales_order(docname):
 
     return {"sales_order": sales_order_doc.name}
 
-@frappe.whitelist()
+@frappe.whitelist(methods=["POST"])
 def create_contract(name):
-    """Create a contract from the Utility Service Request."""
-    doc = frappe.get_doc("Utility Service Request", name)
-    
-    contract = frappe.new_doc("Contract")
-    contract.party_type = "Customer"
-    contract.party_name = doc.customer
-    contract.utility_service_request = name
-    contract.start_date = doc.start_date
-    contract.end_date = doc.end_date
-    contract.contract_template = doc.contract_template
-    contract.contract_terms = doc.contract_terms
-    contract.requires_fulfilment = doc.requires_fulfilment
-    contract.fulfilment_terms = doc.fulfilment_terms
-
-    # Fields to ignore
-    ignore_fields = {"parent", "parenttype", "parentfield", "idx", "name", 
-                     "creation", "modified", "owner", "docstatus"}
-
-    for item in doc.requested_properties:
-        row_data = {}
-        for key, value in item.as_dict().items():
-            if key not in ignore_fields:
-                row_data[key] = value
-        contract.append("properties", row_data)
-
-    contract.flags.ignore_mandatory = True
-    contract.insert()
-
-    return contract.name
+    """Compatibility endpoint; uses reviewed source validation and normal permissions."""
+    from truegroup_property.services.onboarding import create_contract as create
+    return create(name)
 
 
 @frappe.whitelist()

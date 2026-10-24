@@ -1,0 +1,20 @@
+[
+  {
+    "doctype": "CRM Form Script",
+    "name": "Truegroup Tenant Lead",
+    "dt": "CRM Lead",
+    "view": "Form",
+    "enabled": 1,
+    "is_standard": 0,
+    "script": "function setupForm({ doc }) {\n  if (doc.status !== \"Qualified\") return {actions: []};\n  return {actions: [{\n    label: \"Create / Open Tenant Deal\",\n    onClick: async () => {\n      const result = await call(\"truegroup_property.services.onboarding.create_deal\", {lead_name: doc.name});\n      window.location.href = \"/desk/crm-deal/\" + encodeURIComponent(result.deal);\n    }\n  }]};\n}"
+  },
+  {
+    "doctype": "CRM Form Script",
+    "name": "Truegroup Tenant Deal",
+    "dt": "CRM Deal",
+    "view": "Form",
+    "enabled": 1,
+    "is_standard": 0,
+    "script": "function setupForm({ doc }) {\n  if (doc.status !== \"Won\") return {actions: []};\n  return {actions: [{\n    label: \"Review / Open Customer\",\n    onClick: async () => {\n      const result = await call(\"truegroup_property.services.onboarding.prepare_customer\", {deal_name: doc.name});\n      window.location.href = result.customer\n        ? \"/desk/customer/\" + encodeURIComponent(result.customer)\n        : \"/desk/customer/new-customer-1?crm_deal=\" + encodeURIComponent(doc.name);\n    }\n  }, {\n    label: \"Create / Open Service Request\",\n    onClick: async () => {\n      const result = await call(\"truegroup_property.services.onboarding.create_service_request\", {deal_name: doc.name});\n      window.location.href = \"/desk/utility-service-request/\" + encodeURIComponent(result.service_request);\n    }\n  }]};\n}"
+  }
+]

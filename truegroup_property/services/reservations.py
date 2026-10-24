@@ -21,11 +21,13 @@ def reserve_deal_unit(deal_name):
         lock("Utility Property", name)
     prop = frappe.get_doc("Utility Property", selected)
     expected = ("CRM Deal", deal.name)
-    if prop.is_group or prop.get("workflow_state") not in (None, "", "Approved"):
+    if prop.is_group or prop.get("workflow_state") != "Approved":
         frappe.throw("Only an approved unit can be reserved")
     if prop.get("tg_contract") or not reservation_allowed(prop.status, owner_of(prop), expected):
         frappe.throw("The unit is unavailable or reserved by another source; legacy reservations require review")
     if previous and previous != selected:
+        if frappe.db.exists("Utility Service Request", {"tg_crm_deal": deal.name, "docstatus": ["!=", 2]}):
+            frappe.throw("Cancel the existing Service Request before moving its reservation")
         old = frappe.get_doc("Utility Property", previous)
         if old.status != "Reserved" or owner_of(old) != expected or old.get("tg_contract"):
             frappe.throw("The previous reservation cannot be released by this deal")

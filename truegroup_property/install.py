@@ -25,6 +25,7 @@ def after_install():
             frappe.get_doc({"doctype": "Role", "role_name": role}).insert()
     ensure_custom_fields()
     create_onboarding_workflow()
+    ensure_onboarding_records()
 
 
 def create_onboarding_workflow():
@@ -50,3 +51,23 @@ def ensure_custom_fields():
             if existing and (existing.fieldtype != f["fieldtype"] or (f.get("options") and existing.options != f["options"])):
                 frappe.throw(f"Incompatible existing field: {dt}.{f['fieldname']}")
     create_custom_fields(config, update=False)
+
+
+def after_migrate():
+    ensure_custom_fields()
+    create_onboarding_workflow()
+    ensure_onboarding_records()
+
+
+def ensure_onboarding_records():
+    if not frappe.db.exists("Customer Group", "Utility & Rental"):
+        root = frappe.db.get_value("Customer Group", {"is_group": 1, "lft": 1}, "name")
+        if not root:
+            frappe.throw("Create the root Customer Group before configuring Truegroup onboarding")
+        frappe.get_doc({"doctype": "Customer Group", "customer_group_name": "Utility & Rental",
+                        "parent_customer_group": root, "is_group": 0}).insert()
+    config = json.loads((Path(__file__).parent / "configuration" / "crm_form_scripts.json").read_text())
+    # Preserve existing enabled state and user edits; never overwrite other CRM scripts.
+    for record in config:
+        if not frappe.db.exists("CRM Form Script", record["name"]):
+            frappe.get_doc(record).insert()

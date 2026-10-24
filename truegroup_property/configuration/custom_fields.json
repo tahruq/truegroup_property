@@ -277,6 +277,14 @@
       "fieldtype": "Select",
       "options": "\nFirst Month Rent",
       "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "utility_service_request",
+      "label": "Utility Service Request",
+      "fieldtype": "Link",
+      "options": "Utility Service Request",
+      "read_only": 0,
+      "module": "Truegroup Property"
     }
   ],
   "Sales Order": [
@@ -330,7 +338,9 @@
       "label": "CRM Deal",
       "fieldtype": "Link",
       "options": "CRM Deal",
-      "module": "Truegroup Property"
+      "module": "Truegroup Property",
+      "read_only": 1,
+      "no_copy": 1
     }
   ],
   "CRM Deal": [
@@ -363,7 +373,37 @@
       "label": "Source Lead",
       "fieldtype": "Link",
       "options": "CRM Lead",
+      "read_only": 1,
+      "module": "Truegroup Property",
+      "no_copy": 1
+    },
+    {
+      "fieldname": "custom_deal_type",
+      "label": "Request Type",
+      "fieldtype": "Link",
+      "options": "Issue Type",
       "read_only": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_expected_move_in_date",
+      "label": "Expected Move-in Date",
+      "fieldtype": "Date",
+      "read_only": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "custom_contract_duration_in_months",
+      "label": "Contract Duration (Months)",
+      "fieldtype": "Int",
+      "read_only": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "erpnext_customer",
+      "label": "ERPNext Customer",
+      "fieldtype": "Data",
+      "read_only": 1,
       "module": "Truegroup Property"
     }
   ],
@@ -372,6 +412,45 @@
       "fieldname": "crm_deal",
       "label": "CRM Deal",
       "fieldtype": "Data",
+      "module": "Truegroup Property",
+      "read_only": 1,
+      "no_copy": 1
+    }
+  ],
+  "CRM Lead": [
+    {
+      "fieldname": "custom_introducing_agent",
+      "label": "Introducing Agent",
+      "fieldtype": "Link",
+      "options": "Sales Partner",
+      "read_only": 0,
+      "module": "Truegroup Property"
+    },
+    {
+      "fieldname": "tg_tenant_contact",
+      "label": "Tenant Contact",
+      "fieldtype": "Link",
+      "options": "Contact",
+      "read_only": 1,
+      "module": "Truegroup Property"
+    }
+  ],
+  "Contract": [
+    {
+      "fieldname": "utility_service_request",
+      "label": "Service Request",
+      "fieldtype": "Link",
+      "options": "Utility Service Request",
+      "read_only": 0,
+      "module": "Truegroup Property",
+      "no_copy": 1
+    },
+    {
+      "fieldname": "properties",
+      "label": "Properties",
+      "fieldtype": "Table",
+      "options": "Contract Utility Property Item",
+      "read_only": 0,
       "module": "Truegroup Property"
     }
   ]
